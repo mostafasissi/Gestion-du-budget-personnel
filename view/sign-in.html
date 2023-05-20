@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <title>Créer un compte </title>
+</head>
+<body>
+    <section>
+            <h3>Welcome back</h3>
+            <p>Entrer votre email et mot de passe pour se connecter </p>
+            <form action="../controller/controller_utilisateur.php?action=login" method="post">
+            <table>
+                <tr class="Champ_input">
+                    <td>
+                        Email : <br/>
+                        <input type="email" name="login" placeholder="votre adresse mail"/>
+                    </td>
+                    
+                </tr>
+                <tr class="Champ_input">
+                     <td>
+                        <br/> Mot de passe : <br/> 
+                        <input type="password" name="password" placeholder="123.@AUL"/>
+                     </td>
+                     
+                </tr>
+                <tr class="ligne_button" >
+                    <td>
+                        <input type="submit" name="valider" id="bouton" value="Se connecter"/> 
+                        <p>Vous n'avez pas un compte ? : <a href="sign-up.html" class="creer_compte">Créer un compte </a>  </p>
+                    </td>
+                    
+                </tr>
+            </table> 
+                
+          </form>
+          
+          
+    </section>
+</body>
+</html>
